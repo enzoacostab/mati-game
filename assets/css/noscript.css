@@ -1,0 +1,146 @@
+
+
+	#banner .inner {
+		opacity: 1;
+	}
+	h2{
+		
+		color: rgb(212, 212, 212);
+	}
+	.tr1{
+		display:flex;
+	}
+	.ag{
+		margin-left:5px;
+		border: rgb(160, 160, 160) 2px solid;
+	}
+	.mod{
+
+		margin-top: 5px;
+	}
+	#users{
+		border-collapse: separate;
+		border-spacing: 10px;
+		padding: 0;
+		width: 100%;
+		display: block;
+		padding: 10px;
+		box-shadow: 0px 0px 2px 5px rgb(100, 100, 100);
+	}
+	.content{
+		width: inherit;
+	}
+	.contentli{
+		width: 100%;
+		display: block;
+	}
+	tbody{
+		width: 100%;
+		display: block;
+		
+		
+		
+	}
+	tr{
+		width: 100%;
+		display: flex;
+		padding: 5px 0 5px 0;
+		flex-wrap: wrap;
+		border-bottom: 1px solid black;
+		align-items: center;
+	}
+	td{
+		flex:1;
+		vertical-align: middle;
+
+	}
+	.u{
+		margin-left:10px;
+	}
+	input[type="submit"].mod{
+		margin-left: 5px;
+		min-width: 5em;
+		width: 9em;
+	}
+
+	a{
+		border: none;
+	}
+	.row ul ,.row ul li{
+		padding: 0;
+	}
+	div.row.gtr-50{
+		flex-direction: column;
+	}
+	.col-4,.col-6{
+		padding: 10px;
+		width: 100%;
+	}
+	
+	.row ul{
+		list-style: none;
+		margin: 50px 0 0 0;
+	}
+	i{
+		margin-right: 10px;
+	}
+	li{
+		margin-bottom: 30px;
+	}
+
+	#main{
+		padding: 3em;
+	}
+	.special.container{
+		margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.mod{
+		display: flex;
+	}
+	@media screen and (min-width:1440px) {
+		.wrapper.style4{
+			padding: 4em 15em 4em 15em;
+		}
+		}
+	@media screen and (max-width: 736px) {
+	#page-wrapper #header{
+		display: flex;
+		text-align: left;
+		flex-wrap: wrap;
+	  }
+	}
+	@media screen and (max-width:620px) {
+		.special.container{
+			padding-left: 0;
+			padding-right: 0;
+			margin: 0;
+			width: 100%;
+		}
+		#main{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.u{
+		margin-left:40px;
+		}
+	}
+	@media screen and (max-width:466px) {
+		#page-wrapper #header{
+			justify-content: center;
+			gap: 7px;
+	}
+	.usuario{
+		display: none;
+	}
+	header.special.container{
+		padding: 0;
+		margin-top: 50px;
+		padding-top: 60px;
+	}
+	}
+	

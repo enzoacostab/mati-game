@@ -1,0 +1,473 @@
+@font-face {
+  font-family:Vibur;
+  src: url('fonts/Vibur-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family:neon;
+  src: url('fonts/NEON.TTF');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family:enter;
+  src: url('fonts/LasEnter.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: bolder;
+  
+}
+.index{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/pared.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+}
+.info{
+  background-color: rgb(54, 33, 33);
+  background-image: url(../img/pared.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#vid{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+#video{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 550px;
+  width: 1450px;
+}
+#w{
+  display: block;
+}
+.info h1{
+  color: red;
+   font-family: neon; 
+  animation: letter-flicker 1s linear infinite;
+}
+.info h2{
+  color: rgb(255, 255, 255);
+  animation: letter-flicker 10s linear infinite;
+}
+#foco{
+  width: 60px;
+  height: 80px;
+  border: black 1px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+#foco:hover{
+  filter:contrast(40%) sepia(1) hue-rotate(20deg) saturate(1000%) drop-shadow(10px 0px 30px gold);
+  animation: pista 0.25s forwards;
+}
+.hint-content{
+  background-color:rgb(0, 255, 255);
+  width:auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hint-content.f{
+  display: none;
+}
+.hint-content a{
+ position: absolute;
+ top: 5px;
+ right: 10px;
+ text-decoration: none;
+ color: black;
+}
+
+.hint{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+}
+.mdp div a{
+  border-bottom: none;
+}
+#pista:target{
+  opacity:1;
+  pointer-events:auto;
+}
+.p1{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/p1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p1 p{
+  text-align: left;
+}
+.p2{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/p2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p3{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/p3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p3 p{
+  text-align: left;
+}
+.p4{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/p4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p5{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/p5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p5 p{
+  text-align: left;
+}
+.p6{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../img/p6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#comp p, #pist p{
+  margin-bottom:30px ;
+  padding-left: 5px;
+}
+#pist p{
+  margin:0 ;
+  padding-left: 5px;
+}
+#pist a{
+  border-bottom: none;
+}
+#comp a {
+  border-bottom: none;
+}
+#comp h2, #pist h2{
+  margin-bottom: 10px;
+}
+#w h3{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: fit-content;
+  width: 40px;
+  font-weight: bolder;
+  text-align: center;
+  
+}
+form[name=f1],#f1{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+form[name=f1] input[type=text]{
+  width: 30%;
+  color: white;
+}
+form[name=f1] input[type=button]{
+  width: 1%;
+  height: 100%;
+  padding: 1.1em;
+  line-height: normal;
+
+}
+.div3 input[type=text]{
+  color: white;
+}
+.div1 p{
+  margin-top:40px ;
+  font-size: 20px;
+  padding: 10px;
+}
+#incorrecta{
+  display: none;
+  color: red;
+  animation: 3s text-flicker;
+  font-weight: bolder;
+  font-size: 25px;
+}
+#correcta{
+  display: none;
+  color: rgb(0, 200, 0);
+  animation: 3s letter-flicker;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.p3 .div1{
+height: 180px;
+}
+.div1{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.div1 a{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.div2{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.281);
+}
+.div3{
+  height: 200px;
+  text-align: center;
+}
+.div3 p{
+  color: black;
+  border-radius: 5px;
+  background-color: rgba(0, 255, 255, 0.5);
+}
+.div3 input{
+  margin-top: 10px;
+}
+.boton1{
+  color: rgb(94, 93, 93);
+  font-family: neon;
+  font-size: 30px;
+  text-align:center;
+  text-decoration: none;
+  border:5px solid ;
+  background-color: black;
+  width:200px;
+  border-radius:20px;
+  margin: 10px;
+  padding: 10px;
+}
+.boton1:hover{
+  color: rgb(24, 24, 226) ;
+  animation: border-flicker 2s linear infinite;
+}
+h1 {
+  color:#FF00E6;
+  font-family:enter;
+  font-size:80px;
+  animation: text-flicker 3s linear infinite;
+}
+p{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.300);
+  padding: 10px;
+}
+.div2 input{
+  border: 0;
+  margin: 5px;
+  padding: 5px;
+  background-color:white ;
+  width: auto;
+}
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px ;
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px ;
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px ;
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px 
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px 
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px 
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px 
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px 
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px 
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px 
+    }
+  }
+@keyframes border-flicker {
+    0% {
+  box-shadow: 0px 0px 78px 4px ;
+    }
+    2% {
+  box-shadow: 0px 0px 78px 4px ;
+    }
+    4% {
+  box-shadow: 0px 0px 78px 4px ;
+    }
+    
+    8% {
+  box-shadow: 0px 0px 78px 4px ;
+    }
+    70% {
+  box-shadow: 0px 0px 78px 4px ;
+    }
+    100% {
+  box-shadow: 0px 0px 78px 4px ;
+    }
+  } 
+@keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px ;
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px ;
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px ;
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px ;
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px ;
+    }
+}
+@keyframes pista{
+  0%{
+    transform: rotate( 15deg ) ;
+  }
+  25%{
+    transform: rotate( -15deg ) ;
+  }
+  50% {
+    transform: rotate( 15deg ) ;
+  }
+  75% {
+    transform: rotate( -15deg ) ;
+  }
+  100% {
+    transform: rotate( 15deg ) ;
+    transform: rotate( 0deg );
+  }
+}
+.cant{
+  width:100% ; 
+  display:flex; 
+  justify-content: right;
+  flex-wrap:wrap; 
+  gap:10px; 
+  align-items:center; 
+  margin-bottom:10px
+}
+@media screen and (max-width:783px){
+  .conf{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cant{
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+

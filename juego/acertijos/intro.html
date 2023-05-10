@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="vid">
+    <video id="video" muted controls autoplay src="../video/El MATI.mp4"></video>
+    </div>
+    <script type="text/javascript">
+        video=document.getElementById("video");
+        video.addEventListener("ended", function(){
+        window.location.href=("p1.php");
+        });
+    </script>
+</body>
+</html>
